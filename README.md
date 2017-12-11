@@ -4,7 +4,7 @@ This project was done in my free time at work roughly a year ago as a primer to 
 
 My work on battleships in mvc has concluded, but I recently have been working on another battleships project using node and react.
 
-## Intructions to play:
+## Instructions to play:
 
 * Open solution (.sln) in Visual Studio 2015
 * Use IIS Express feature in Visual Studio

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MvcBattleships.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -23,6 +22,7 @@ namespace MvcBattleships.Controllers
         };
 
         // GET: /<controller>/
+        // Initialize game state
         public IActionResult Index()
         {
             //Initialize game session data
@@ -31,11 +31,9 @@ namespace MvcBattleships.Controllers
             List<string> dirList = new List<string> { "S", "E", "N", "W" };
             GameBoardModel player = new GameBoardModel(10, 10);
             ezbot opponent = new ezbot(10, 10);
-            //HttpContext.Session.SetString("dirList", dirList);
             HttpContext.Session.SetString("validShips", JsonConvert.SerializeObject(validShips));
             HttpContext.Session.SetString("opponentModel", JsonConvert.SerializeObject(opponent.model));
             HttpContext.Session.SetString("player", JsonConvert.SerializeObject(player));
-            //var value = JsonConvert.DeserializeObject<List<string>>(HttpContext.Session.GetString("bro"));
             return View("/Views/Game/PlaceShips.cshtml", settingsModel);
         }
 
@@ -62,7 +60,7 @@ namespace MvcBattleships.Controllers
             }
         }
 
-        //This method is disgusting -REWRITE THIS- Opponent can take their shot after we have determined if theyve been hit/if player has won.
+        // Receive shot and determine if it has hit or missed. Check win conditions. Opponent takes shot.
         [HttpPost]
         public JsonResult TakeShot([FromBody]TakeShotViewModel shot)
         {

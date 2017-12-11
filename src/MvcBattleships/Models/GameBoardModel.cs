@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace MvcBattleships.Models
 {
@@ -14,13 +12,8 @@ namespace MvcBattleships.Models
         public int ColSize { get; set; }
         //Tuple<True - placed ship; false - no ship , True - hit; false - not hit>
         private readonly List<List<Tuple<bool, bool>>> _myBoard;
-        public List<List<Tuple<bool, bool>>> MyBoard
-        {
-            get
-            {
-                return _myBoard;
-            }
-        }
+        public List<List<Tuple<bool, bool>>> MyBoard => _myBoard;
+
         //True - hit; false - miss; null - unexplored
         public List<List<bool?>> OpponentBoard;
         //TODO: Make validShips be developed in the construction

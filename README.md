@@ -1,6 +1,6 @@
 ## mvcBattleships
 
-This project was done in my free time at work roughly a year ago as a primer to learn mvc, c#, and Visual Studio. This is only an mvp, I would love to do more, but my focused has shifted to learning other technologies. It was a great start and I learned so much, but I've learned much more since then.
+This project was done in my free time at work roughly a year ago as a primer to learn mvc, c#, and Visual Studio. This is only an mvp, I would love to do more, but my focused has shifted to learning other technologies. It was a great start and I learned so much, but I've learned much more since then. There still a lot of boiler plate default code from generating a project in Visual Studio, hopefully it's not too hard to look past.
 
 My work on battleships in mvc has concluded, but I recently have been working on another battleships project using node and react.
 

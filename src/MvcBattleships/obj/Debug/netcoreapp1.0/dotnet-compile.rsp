@@ -1,5 +1,5 @@
---temp-output:C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\obj\Debug\netcoreapp1.0\
---out:C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\bin\Debug\netcoreapp1.0\MvcBattleships.dll
+--temp-output:C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\obj\Debug\netcoreapp1.0\
+--out:C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\bin\Debug\netcoreapp1.0\MvcBattleships.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -199,14 +199,14 @@
 --reference:C:\Users\jlyon\.nuget\packages\System.Threading.Timer\4.3.0\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\jlyon\.nuget\packages\System.Xml.ReaderWriter\4.3.0\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\jlyon\.nuget\packages\System.Xml.XDocument\4.3.0\ref\netstandard1.3\System.Xml.XDocument.dll
---resource:"C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\obj\Debug\netcoreapp1.0\MvcBattleshipsdotnet-compile.deps.json",MvcBattleships.deps.json
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\ezbot.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Program.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\ShotStatusEnum.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Startup.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Controllers\GameController.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Controllers\HelloworldController.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Controllers\HomeController.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Models\GameBoardModel.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Models\HelloworldModel.cs
-C:\Users\jlyon\Documents\Visual Studio 2015\Projects\MvcBattleships\src\MvcBattleships\Models\TakeShotViewModel.cs
+--resource:"C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\obj\Debug\netcoreapp1.0\MvcBattleshipsdotnet-compile.deps.json",MvcBattleships.deps.json
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\ezbot.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Program.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\ShotStatusEnum.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Startup.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Controllers\GameController.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Controllers\HelloworldController.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Controllers\HomeController.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Models\GameBoardModel.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Models\HelloworldModel.cs
+C:\Users\jlyon\Documents\MvcBattleships\src\MvcBattleships\Models\TakeShotViewModel.cs

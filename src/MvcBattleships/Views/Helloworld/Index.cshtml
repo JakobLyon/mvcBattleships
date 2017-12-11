@@ -1,0 +1,28 @@
+﻿@model MvcBattleships.Models.HelloworldModel
+
+@{
+    ViewData["Title"] = "Battleship List";
+}
+
+@using (Html.BeginForm("TakeShot", "Helloworld", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <fieldset>
+        <legend>Take your shot</legend>
+        <div class="editor-label">
+            <p>Row</p>
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(Model => Model.rowSelect, Model.rowSelectList, "rowChoice")
+        </div>
+        <div class="editor-label">
+            <p>Column</p>
+        </div>
+        <div class="editor-field">
+            @Html.DropDownListFor(Model => Model.colSelect, Model.colSelectList, "colChoice")
+        </div>
+
+        <input type="submit" value="Fire" />
+    </fieldset>
+}
+
+<p>Hello from our View Template!</p>

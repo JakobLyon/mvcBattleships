@@ -1,0 +1,68 @@
+﻿@{
+//rewrite each board display with partial views
+//rewrite opponents board to use an enum
+}
+
+@model MvcBattleships.Models.GameBoardModel
+
+<div class="container_content-wrapper">
+    <div class="container-content">
+        <div class="opponent-field">
+            <p>Opponent's Board:</p>
+            <table class="grid" id="opponent-board">
+                @for (var row = 0; row < Model.RowSize; row++)
+                {
+                    <tr>
+                        @for (var col = 0; col < Model.ColSize; col++)
+                        {
+                            if (Model.OpponentBoard[row][col] == true)
+                            {
+                                <td>O</td>
+                            }
+                            else if (Model.OpponentBoard[row][col] == false)
+                            {
+                                <td>X</td>
+                            }
+                            else
+                            {
+                                <td>-</td>
+                            }
+                        }
+                    </tr>
+                }
+            </table>
+            <button id="fire" type="button">Fire</button>
+        </div>
+
+        <p>Your Board:</p>
+        <div class="player-field">
+            <table class="grid" id="player-board">
+                @for (int row = 0; row < Model.RowSize; row++)
+                {
+                    <tr>
+                        @for (var col = 0; col < Model.ColSize; col++)
+                        {
+                            if (Model.MyBoard[row][col].Item1 == true && Model.MyBoard[row][col].Item2 == false)
+                            {
+                                <td>O</td>
+                            }
+                            else if (Model.MyBoard[row][col].Item1 == true && Model.MyBoard[row][col].Item2 == true)
+                            {
+                                <td>X</td>
+                            }
+                            else if (Model.MyBoard[row][col].Item1 == false && Model.MyBoard[row][col].Item2 == false)
+                            {
+                                <td>-</td>
+                            }
+                            else if (Model.MyBoard[row][col].Item1 == false && Model.MyBoard[row][col].Item2 == true)
+                            {
+                                <td>M</td>
+                            }
+                        }
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+</div>
+<p>Take Shots Page</p>

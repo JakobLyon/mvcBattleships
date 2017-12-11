@@ -1,0 +1,48 @@
+﻿@using MvcBattleships
+
+@model MvcBattleships.Models.HelloworldModel
+
+@{
+    var count = 1;
+}
+
+<div class="container_content-wrapper">
+    <div class="container_content">
+        @if (!String.IsNullOrEmpty(@Model.error))
+        {
+            <p>@Model.error</p>
+        }
+        @using (Html.BeginForm("PlaceShips", "Game", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                foreach (int size in Model.validShips)
+                {
+                <div class="editor-label">
+                    <p>Ship of size @size</p>
+                </div>
+                <div class="editor-label">
+                    <p>Row</p>
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownList(Convert.ToString(size) + count, Model.rowSelectList)
+                </div>
+
+                <div class="editor-label">
+                    <p>Column</p>
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownList(Convert.ToString(size) + count, Model.colSelectList)
+                </div>
+
+                <div class="editor-label">
+                    <p>Direction</p>
+                </div>
+                <div class="editor-field">
+                    @Html.DropDownList(Convert.ToString(size) + count, Model.dirSelectList)
+                </div>
+                count++;
+            }
+            <input type="submit" value="Submit" />
+        }
+
+    </div>
+</div>
